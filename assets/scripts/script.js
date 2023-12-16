@@ -66,7 +66,14 @@ contactBtn.addEventListener("click", () => {
   // Scroll smoothly to the contact section
   document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
 });
+const insta = document.querySelector('.instaLink');
+insta.addEventListener("click", () => {
+  window.location.href = "https://www.instagram.com/webluxe.official/"
+})
 
+document.querySelector('.mailLink').addEventListener('click' ,() {
+  window.location.href= "mailto:webluxeinfo@gmail.com"
+})
 const arrowUp = document.querySelector(".arrow-up");
 arrowUp.addEventListener("click", () => {
   document.getElementById("home").scrollIntoView({ behavior: "smooth" });
