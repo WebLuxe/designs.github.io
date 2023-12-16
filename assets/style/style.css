@@ -1,0 +1,432 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #010f1c;
+  color: white;
+}
+
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.2px solid #323030; /* Adding a white solid bottom border */
+}
+
+header .fa {
+  position: fixed;
+  display: none;
+  top: 30px;
+  background: #202b36;
+  font-size: 20px;
+  color: rgb(187, 187, 187);
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid rgb(143, 142, 142);
+  border-radius: 7px;
+  left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+header nav {
+  padding: 12px;
+}
+
+header nav ul li a {
+  color: rgb(143, 142, 142);
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+header ul li a:hover {
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.2s all ease-out;
+  background: RGBA(255, 255, 255, 0.08);
+}
+
+.home {
+  margin-top: 50px;
+  height: 100vh;
+}
+.home h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+}
+
+.home h1 p {
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.home div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.home div p {
+  margin-top: 20px;
+  padding: 14px;
+  width: 80%;
+  color: RGBA(255, 255, 255, 0.64);
+}
+
+.home div button {
+  padding: 10px;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  height: 60px;
+  border-radius: 10px;
+  background: #dbaa14;
+  border: none;
+  font-weight: bold;
+}
+
+section {
+  /* width: 100vw; */
+  scroll-behavior: smooth;
+  height: auto;
+}
+
+.about .head,
+.testimonials .head,
+.service .head,
+.contact .head,
+.faq .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .head h1,
+.testimonials .head h1,
+.service .head h1,
+.contact .head h1,
+.faq .head h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about .head h3,
+.service .head h3,
+.testimonials .head h3,
+.contact .head h3,
+.faq .head h3 {
+  font-size: 30px;
+  border-bottom: 1px solid rgb(143, 142, 142);
+  width: auto;
+  color: RGBA(255, 255, 255, 0.64);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.about .sub-heading h2 {
+  padding-top: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about .container p {
+  color: rgb(187, 187, 187);
+}
+.about .container .content {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.about .content + div {
+  margin: 0 auto;
+  width: 80%;
+}
+.about .content + div p {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.container_flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Gap between grid items */
+}
+.container .container_card,
+.service-card {
+  background: #202b36;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.content .container_card:hover,
+.service-card:hover {
+  background: #293847;
+  transition: 0.2s ease-in;
+}
+
+.container_flex .container_card p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.container_card h3 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 30px;
+}
+
+.content-end-p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.testimonials,
+.service,
+.faq {
+  padding-top: 20px;
+}
+
+.testimonials .head h1,
+.service .head h1,
+.contact .head h1,
+.faq .head h1 {
+  text-transform: uppercase;
+  font-size: 60px;
+}
+
+.testimonials .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials .head h1,
+h3 {
+  text-align: center;
+}
+
+.testimonials .testimonial-content,
+.service-content,
+.contact .contact-content,
+.faq-content {
+  padding: 10px;
+  width: 80%;
+  color: rgb(187, 187, 187);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-content p {
+  padding-top: 17px;
+}
+.testimonial-content button,
+.submit,
+.q-btn {
+  padding: 10px;
+  margin-top: 20px;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  height: 60px;
+  border-radius: 10px;
+  background: #dbaa14;
+  border: none;
+  font-weight: bold;
+}
+
+.contact {
+  padding-top: 20px;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .form form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content h2 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+}
+.form form input,
+textarea {
+  font-weight: 500;
+  resize: none;
+  width: 600px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  line-height: 22px;
+  background-color: transparent;
+  color: rgb(187, 187, 187);
+  border: 2px solid rgb(143, 142, 142);
+  transition: all 0.3s;
+  padding: 13px;
+}
+
+/* Initially hide the content */
+.hidden {
+  opacity: 0;
+  transform: translateY(0px);
+}
+/* Apply animation to fade in and slide up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Trigger animation when content becomes visible */
+.visible {
+  animation: fadeInUp 1s forwards; /* Change time as needed */
+}
+
+/* Style for the FAQ section */
+
+/* Style for the toggle button */
+.toggle-btn {
+  background-color: #131b23;
+  color: rgba(255, 255, 255, 0.71);
+  cursor: pointer;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+
+/* Style for the answer to be collapsed */
+
+/* Style for the answer to be collapsed */
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: ease-in-out 0.1s;
+}
+
+/* Style for the answer when expanded */
+.answer.show {
+  max-height: 200px; /* Adjust this value based on your content */
+  padding: 10px 15px;
+}
+
+footer {
+  padding-top: 10%;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  position: relative;
+  color: rgb(143, 142, 142);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer p {
+  padding: 10px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  opacity: 60%;
+  cursor: pointer;
+  width: 50px;
+  object-fit: contain;
+}
+
+footer img:hover {
+  opacity: 100%;
+  transition: opacity 0.5s ease;
+}
+footer h2,
+h3 {
+  color: aliceblue;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+footer h2 {
+  border-bottom: 1px solid rgb(143, 142, 142);
+}
+
+.arrow-up {
+  padding: 10px;
+  margin-top: 16px;
+  margin-left: 100%;
+  background: #202b36;
+  border: 2px solid rgb(187, 187, 187);
+  margin-bottom: 15px;
+  color: rgb(187, 187, 187);
+  border-radius: 8px;
+}

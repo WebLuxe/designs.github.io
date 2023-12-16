@@ -1,0 +1,146 @@
+/* For tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles specific for tablets */
+  .container_card h3 {
+    font-size: 27px;
+  }
+
+  .about .container .container_card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  header nav ul li a {
+    font-size: 12px;
+  }
+}
+/* For mobile devices */
+@media (max-width: 800px) {
+  /* CSS styles specific for mobile devices */
+  .about .head h1,
+  .testimonials .head h1,
+  .service .head h1,
+  .contact .head h1,
+  .faq .head h1 {
+    font-size: 40px;
+  }
+  .form form input,
+  textarea {
+    width: unset;
+  }
+  header {
+    justify-content: center;
+  }
+  header nav ul {
+    display: block;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    /* margin: 10px; */
+    padding: 100px 0;
+    background-color: #010f1c;
+    text-align: center;
+    font-size: 16px;
+    transition: 0.5s ease-out;
+  }
+
+  .active {
+    top: 0vh;
+  }
+  header .fa {
+    display: block;
+  }
+  header nav ul li {
+    padding: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  header img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .home h1 {
+    font-size: 40px;
+  }
+
+  .home h1 p {
+    font-size: 30px;
+  }
+
+  .container_flex {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 467px) {
+  .home div p,
+  .testimonial-content p,
+  .service-content p {
+    font-size: 13px;
+  }
+
+  .about .head h3,
+  .testimonials .head h3,
+  .service .head h3,
+  .contact .head h3,
+  .faq .head h3 {
+    width: auto;
+
+    font-size: 20px;
+  }
+  .about .head h1 {
+    font-size: 30px;
+  }
+
+  .end-para {
+    padding: 5px;
+  }
+  .content p {
+    font-size: 15px;
+  }
+
+  .about .sub-heading h2 {
+    margin-top: 14px;
+    font-size: 30px;
+  }
+
+  .testimonials .head h1,
+  .service .head h1,
+  .faq .head h1 {
+    font-size: 25px;
+  }
+
+  .about .container .content,
+  .testimonial-content,
+  .service-content {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .faq-content {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .testimonial-content button,
+  .service-content button {
+    width: unset;
+  }
+
+  .form form input,
+  textarea {
+    width: 200px;
+  }
+
+  .form button {
+    width: 200px;
+  }
+}
